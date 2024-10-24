@@ -13,10 +13,8 @@ load_dotenv()
 
 logging.basicConfig(level=logging.INFO)
 
-# Ініціалізація FastAPI
 app = FastAPI()
 
-# app.mount("/static", StaticFiles(directory="auto_review_tool/static"), name="static")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
