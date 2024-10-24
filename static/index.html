@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Review Tool</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Coding Assignment Auto-Review Tool</h1>
+
+    <div id="error_messages" style="color: red;"></div>
+
+    <label for="description">Assignment Description</label>
+    <textarea id="description" rows="4" placeholder="Enter the assignment description..."></textarea>
+
+    <label for="repo_url">GitHub Repo URL</label>
+    <input type="text" id="repo_url" placeholder="https://github.com/myaccount/TestTask.git">
+
+    <label>Candidate Level</label>
+    <div class="candidate-level">
+        <label><input type="radio" name="level" value="Junior"> Junior</label>
+        <label><input type="radio" name="level" value="Middle"> Middle</label>
+        <label><input type="radio" name="level" value="Senior"> Senior</label>
+    </div>
+
+    <div class="button-group">
+        <button id="review">Review</button>
+        <button id="clear" class="clear">Clear</button>
+    </div>
+
+    <div class="repo-files">
+        <h3>Files found in the repository:</h3>
+        <ul id="file_list">
+
+        </ul>
+        <div id="pagination"></div>
+    </div>
+
+    <div class="review-result">
+        <h3>Review Result:</h3>
+        <p id="downsides">Downsides:</p>
+        <p id="rating" class="rating">Rating:</p>
+        <p id="summary">Summary:</p>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
