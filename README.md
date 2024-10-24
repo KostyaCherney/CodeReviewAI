@@ -17,14 +17,18 @@ cd CodeReviewAI
 ```
 
 2. Add .env file
-  and add 2 field
+```
 OPENAI_API_KEY=your_key
 GITHUB_TOKEN=your_key
-
-3. Run repository
+```
+4. Run repository
 
 cd <path/to/local/repo>
+```
 docker-compose up --build
+```
 
 4. Open
+```
    http://0.0.0.0:8000/
+```
