@@ -62,7 +62,7 @@ async def analyze_code(assignment_description: str):
     ]
     try:
         response = await openai.ChatCompletion.acreate(
-            model="gpt-3.5-turbo",
+            model="gpt-4.5-turbo",
             messages=messages,
             max_tokens=10,
             temperature=0
